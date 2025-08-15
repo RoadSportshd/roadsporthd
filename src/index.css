@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Video.js Custom Styles */
+.vjs-custom-skin {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-js {
+  width: 100% !important;
+  height: 400px !important;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.video-js .vjs-big-play-button {
+  background: rgba(59, 130, 246, 0.9) !important;
+  border-radius: 50% !important;
+  border: none !important;
+  width: 80px !important;
+  height: 80px !important;
+  line-height: 80px !important;
+  font-size: 2rem !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.video-js .vjs-big-play-button:hover {
+  background: rgba(59, 130, 246, 1) !important;
+  transform: translate(-50%, -50%) scale(1.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.video-js .vjs-control-bar {
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.video-js .vjs-progress-control .vjs-progress-holder {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.video-js .vjs-progress-control .vjs-play-progress {
+  background: #3b82f6 !important;
+}
+
+.video-js .vjs-volume-level {
+  background: #3b82f6 !important;
+}
+
+@media (max-width: 768px) {
+  .video-js {
+    height: 250px !important;
+  }
+  
+  .video-js .vjs-big-play-button {
+    width: 60px !important;
+    height: 60px !important;
+    line-height: 60px !important;
+    font-size: 1.5rem !important;
+  }
+}
